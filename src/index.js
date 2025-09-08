@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import AppLayout from './App';
 import Error from "./components/Error"
 import Body from './components/Body';
+import RestrauntMenu from './components/RestrauntMenu';
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact/>
+  },
+  {
+    path: "/restuarants/:resId",
+    element: <RestrauntMenu/>
   }],
     errorElement: <Error/>
   }

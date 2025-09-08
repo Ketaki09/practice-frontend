@@ -2,6 +2,7 @@ import "../index.css"
 const RestrauntCard = ({
 resData
 }) => {
+  console.log("resData", resData);
   return (
     <div className="res-card">
       <img className="res-logo" alt="res-logo"
